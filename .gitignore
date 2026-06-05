@@ -6,3 +6,7 @@ dist/
 npm-debug.log*
 
 .vercel
+figma-nodes.json
+figma-image-fills.json
+figma-baseline-*.png
+render-check-*.png
