@@ -141,6 +141,13 @@ body {
   transform: translateZ(0);
 }
 
+.text-layer.is-wrap {
+  white-space: pre-wrap;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  word-break: keep-all;
+}
+
 .capture-mode body {
   background: #fff;
 }

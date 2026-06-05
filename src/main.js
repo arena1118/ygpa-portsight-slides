@@ -29,6 +29,10 @@ function baseStyles(layer) {
 function renderText(layer) {
   const element = document.createElement("div");
   element.className = "layer text-layer";
+  const weight = Number(layer.fontWeight) || 400;
+  if (weight <= 500 && layer.text.length > 28) {
+    element.classList.add("is-wrap");
+  }
   element.textContent = layer.text;
   assignStyles(element, {
     ...baseStyles(layer),
@@ -92,7 +96,15 @@ function renderSlide(slide, index) {
   return section;
 }
 
-slides.forEach((slide, index) => root.appendChild(renderSlide(slide, index)));
+const requestedSlide = Number(params.get("captureSlide"));
+const visibleSlides =
+  params.get("capture") === "1" && Number.isInteger(requestedSlide) && requestedSlide >= 1
+    ? slides
+        .map((slide, index) => ({ slide, index }))
+        .filter(({ index }) => index === requestedSlide - 1)
+    : slides.map((slide, index) => ({ slide, index }));
+
+visibleSlides.forEach(({ slide, index }) => root.appendChild(renderSlide(slide, index)));
 
 const observer = new IntersectionObserver(
   (entries) => {
