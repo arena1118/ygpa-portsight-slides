@@ -4,119 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>여수광양항만공사 PortSight Slides</title>
+    <meta
+      name="description"
+      content="여수광양항만공사 PortSight 발표 슬라이드 웹 퍼블리싱"
+    />
     <link rel="stylesheet" href="./src/styles.css" />
   </head>
   <body>
     <main class="deck" aria-label="여수광양항만공사 PortSight 발표 슬라이드">
       <nav class="deck-nav" aria-label="슬라이드 이동">
-        <button class="nav-btn" data-target="slide-1">1</button>
-        <button class="nav-btn" data-target="slide-2">2</button>
-        <button class="nav-btn" data-target="slide-3">3</button>
-        <button class="nav-btn" data-target="slide-4">4</button>
+        <a href="#slide-1" aria-label="1번 슬라이드">1</a>
+        <a href="#slide-2" aria-label="2번 슬라이드">2</a>
+        <a href="#slide-3" aria-label="3번 슬라이드">3</a>
+        <a href="#slide-4" aria-label="4번 슬라이드">4</a>
       </nav>
 
       <section class="slide" id="slide-1" aria-label="1단계 목표">
-        <div class="topline">
-          <div class="badge">📊 <b>1단계 목표</b></div>
-          <div class="lead">AX 기반 운영 가시화와 현장 자동화를 통해 초기 성과 창출 및 데이터 기반 의사결정 체계 기반 확보</div>
-        </div>
-
-        <div class="service-grid">
-          <article class="service-card navy">
-            <header><span>01</span><div><h2>지능형 통합 대시보드</h2><p>항만 운영의 One-View 실시간 가시화</p></div></header>
-            <div class="dashboard-visual">
-              <div class="mock-stats"><b>PortSight Dashboard</b><em>7,250</em><em>82,245.0m</em><em>62%</em><em>67%</em></div>
-              <div class="mock-map"></div>
-              <div class="mock-side"><span></span><span></span><span></span><span></span></div>
-            </div>
-            <div class="features"><span>실시간 운영 현황<br />통합 모니터링</span><span>터미널/선석/장비<br />가동률 가시화</span><span>혼잡도·작업량<br />대기 현황 분석</span><span>맞춤형 대시보드<br />및 리포트 제공</span></div>
-            <footer><b>기대효과</b><span>운영 가시성 향상 및 의사결정 속도 개선</span></footer>
-          </article>
-
-          <article class="service-card teal">
-            <header><span>02</span><div><h2>지능형 항만 이벤트 알림 서비스</h2><p>AI 기반 실시간 이벤트 감지·예측·알림</p></div></header>
-            <div class="dashboard-visual alert">
-              <div class="mock-map"></div>
-              <div class="alert-list"><b>선박 알림</b><span>▲ 위험</span><span>▲ 주의</span><span>▲ 경고</span><span>▲ 확인</span></div>
-            </div>
-            <div class="features"><span>AI 기반 이상 징후<br />실시간 감지</span><span>ETA 지연·혼잡·장비<br />이용 예측 알림</span><span>이해관계자 맞춤형 알림<br />(App/Email/SMS)</span><span>이력 분석 기반<br />재발 방지 지원</span></div>
-            <footer><b>기대효과</b><span>이상 상황 선제 대응 및 운영 리스크 최소화</span></footer>
-          </article>
-
-          <article class="service-card sky">
-            <header><span>03</span><div><h2>e-Slip (전자 인수도증)</h2><p>페이퍼 자동화로 반출입 처리 간소화</p></div></header>
-            <div class="eslip">
-              <div><b>기존 프로세스</b><p>종이 인수도증</p><p>수기 검증</p><p>대기/검증 발생</p></div>
-              <strong>→</strong>
-              <div><b>e-Slip 프로세스</b><p>e-Slip 발급</p><p>QR/모바일 제시</p><p>자동 검증</p></div>
-            </div>
-            <div class="features"><span>모바일 기반<br />전자 문서</span><span>자동 검증으로<br />신속 통과</span><span>대기시간 및<br />점검 감소</span><span>문서 보관 및<br />추적 자동화</span></div>
-            <footer><b>기대효과</b><span>게이트 처리 시간 단축 및 현장 효율성 극대화</span></footer>
-          </article>
-
-          <aside class="value-card">
-            <h2>1단계 핵심 가치</h2>
-            <div><b>빠른 구축·빠른 성과</b><p>기존 인프라 활용으로 단기간 내 서비스 오픈 및 체감 성과 창출</p></div>
-            <div><b>운영 효율성 향상</b><p>실시간 정보 기반 의사결정 자동화로 운영 흐름 극대화</p></div>
-            <div><b>이해관계자 만족도 제고</b><p>정확한 정보 제공과 편의성 개선으로 고객 만족도 향상</p></div>
-            <div><b>데이터 기반 확장 준비</b><p>표준화된 데이터 수집 및 활용 기반을 마련하여 고도화 기반 확보</p></div>
-          </aside>
-        </div>
-
-        <div class="bottom-flow">
-          <div class="sources"><h3>연계 데이터 소스 (기존 인프라 활용)</h3><span>TOS<br /><small>터미널 운영</small></span><span>Gate System<br /><small>출입 관리</small></span><span>VBS<br /><small>선박 입항</small></span><span>CCTV<br /><small>영상</small></span><span>IoT 센서<br /><small>장비/환경</small></span><span>기상/해상<br /><small>외부 데이터</small></span></div>
-          <b class="arrow">→</b>
-          <div class="platform"><strong>PortSight</strong><p>통합 데이터 플랫폼</p><span>실시간 수집</span><span>데이터 표준화</span><span>저장·처리</span><span>연계·제공</span></div>
-          <b class="arrow">→</b>
-          <div class="metrics"><h3>1단계 서비스 기대 성과</h3><span>의사결정 속도<br /><b>30% 향상</b></span><span>이상 행동 대응 시간<br /><b>40% 단축</b></span><span>게이트 처리 시간<br /><b>30% 단축</b></span><span>운영 비용 절감 효과<br /><b>10~15%</b></span></div>
-        </div>
+        <img src="./src/assets/slides/slide-1.png" alt="1단계 목표 슬라이드" />
       </section>
 
       <section class="slide" id="slide-2" aria-label="단계별 비전">
-        <div class="vision-row"><b>비전</b><span>데이터 기반 통합 운영</span><i>▶</i><span>AX 실증·검증을 통한 기술 고도화</span><i>▶</i><span>자율·지능형 스마트항만 완성</span><i>▶</i><span>산업 확산 및 기술특화 클러스터 구축</span></div>
-        <div class="roadmap">
-          <div class="stage-head label">단계</div><div class="stage-head b1"><b>1단계</b> AX 기반 데이터 플랫폼 구축</div><div class="stage-head b2"><b>2단계</b> 복합산업 AX 실증 허브 구축</div><div class="stage-head b3"><b>3단계</b> 자율·지능형 스마트항만 완성</div><div class="stage-head b4"><b>4단계 이후</b> 산업 확산·클러스터 완성</div>
-          <div class="row-label">기간</div><div>2026 ~ 2028</div><div>2029 ~ 2031</div><div>2032 ~ 2033</div><div>2034 이후 지속 확산</div>
-          <div class="row-label">핵심 목표</div><div><b>데이터 통합·표준화 및 운영 가시화</b><br />Quick-Win 서비스 제공</div><div><b>AX 기술 실증·검증을 통한</b><br />서비스 고도화 산업 연계 기반 확대</div><div><b>AI 기반 자율·지능형 운영 체계 구현</b><br />Physical AI 현장 적용</div><div><b>항만·산업 전반 AX 확산 및</b><br />기술특화 클러스터 완성</div>
-          <div class="row-label tall">핵심 서비스</div><div class="svc"><ul><li>통합 대시보드</li><li>e-Slip 고도화</li><li>컨테이너 가시화</li><li>예·도착 예측</li></ul><div class="mini-img"></div></div><div class="svc"><ul><li>공급망 관리 AX</li><li>위험물 안전 관리</li><li>복합 물류 관리</li><li>산업 연계 서비스</li></ul><div class="mini-img port"></div></div><div class="svc"><ul><li>Agentic AI 운영</li><li>Digital Twin 최적화</li><li>Physical AI 제어</li><li>통합 자율 관제</li></ul><div class="mini-img ai"></div></div><div class="svc"><ul><li>산업 AX 솔루션</li><li>AX 특화 스타트업 육성</li><li>기술특화 클러스터 조성</li><li>글로벌 협력·수출</li></ul><div class="mini-img net"></div></div>
-          <div class="row-label">기술 수준<br />성숙도</div><div>DX<br /><small>데이터 수집·표준·시각화 중심</small></div><div>AX<br /><small>AI 분석·예측·최적화 실증</small></div><div>Autonomous<br /><small>AI 의사결정·자동화 운영 적용</small></div><div>Ecosystem Expansion<br /><small>산업 생태계 기반 글로벌 확산</small></div>
-          <div class="row-label">적용 범위</div><div><b>컨테이너 부두 중심</b></div><div><b>복합 항만·산업 연계</b></div><div><b>전 항만·장비·현장 전반</b></div><div><b>항만·산업단지·지역 전반</b></div>
-          <div class="row-label">주요 추진<br />과제</div><div>✓ 데이터 표준화 및 품질 관리 체계 구축<br />✓ 통합 플랫폼 및 인프라 고도화<br />✓ 현장 서비스 개발 및 운영 안정화</div><div>✓ AX 기술 실증 환경 구축 및 PoC 확대<br />✓ 산업·물류·제조 연계 데이터 확보<br />✓ AI 모델 고도화 및 서비스 확장</div><div>✓ Agentic AI 운영 체계 구축<br />✓ Physical AI 기반 현장 자동화 확대<br />✓ 통합 자율 관제 및 안전 체계 완성</div><div>✓ AX 솔루션 산업 전반 확산<br />✓ 스타트업·벤처 육성 및 투자 유치<br />✓ 글로벌 협력 및 해외 진출 추진</div>
-        </div>
-        <div class="maturity"><b>기술 성숙도 진화</b><span>기능 구현<br /><small>데이터 수집·통합</small></span><i>→</i><span>실증·검증<br /><small>AI 분석·예측</small></span><i>→</i><span>운영 적용<br /><small>자동화·최적화 구현</small></span><i>→</i><span>산업 확산<br /><small>생태계·글로벌 확대</small></span></div>
-        <div class="invest"><b>투자 방향</b><span>1단계 데이터 및 인프라 투자</span><i>→</i><span>2단계 AI·실증 기술 투자</span><i>→</i><span>3단계 자동화·자율화 투자</span><i>→</i><span>4단계 이후 산업 확산·생태계 투자</span></div>
-        <div class="blue-ribbon">🎯 PortSight는 단계별 기술 성숙도 확보와 산업 확산 전략을 기반으로, 여수광양항을 미래형 기술특화 스마트항만으로 진화시켜 나갑니다.</div>
+        <img src="./src/assets/slides/slide-2.png" alt="단계별 비전 슬라이드" />
       </section>
 
       <section class="slide" id="slide-3" aria-label="기술 적용 전략">
-        <h1 class="black-title">운영 목표 기반 기술 적용 전략</h1>
-        <div class="strategy-box">
-          <div class="phase-head"><div class="purple">01<br /><b>데이터 연결·통합</b><small>데이터를 연결하고 운영 가시화</small></div><div class="green">02<br /><b>AI 기반 분석·예측</b><small>데이터를 분석하여 예측·최적화</small></div><div class="blue">03<br /><b>운영 자동화</b><small>반복 업무를 자동화하고 효율화</small></div><div class="navy-bg">04<br /><b>자율·지능형 운영</b><small>AI가 운영을 판단·제어하는 체계 구현</small></div></div>
-          <div class="strategy-grid"><b>운영<br />목표</b><ul><li>데이터 표준화 및 품질 확보</li><li>다양한 시스템·장비 데이터 연계</li><li>실시간 운영 가시화</li></ul><ul><li>운영 예측 및 이상 징후 탐지</li><li>최적 경로·스케줄·리소스 최적화</li><li>AI 기반 의사결정 지원</li></ul><ul><li>이벤트 감지 및 실시간 대응</li><li>업무 프로세스 자동화</li><li>운영 효율성 및 비용 절감</li></ul><ul><li>AI 기반 실시간 최적 운영</li><li>장비·시설 자동 제어 및 연계</li><li>자율·지능형 운영 체계 구현</li></ul></div>
-          <div class="tech-row"><b>적용<br />기술</b><span>Data Lake</span><span>API Gateway</span><span>Event Bus</span><span>Stream Processing</span><span>AI / ML</span><span>LLM</span><span>Agentic AI</span><span>분석 엔진</span><span>Workflow Engine</span><span>Event Processing</span><span>MLOps</span><span>Digital Twin</span><span>Physical AI</span><span>Vision AI</span><span>AI Guardrail</span></div>
-          <div class="direction-row"><b>적용<br />방향</b><p>분산된 항만 데이터를 통합·표준화하여 실시간으로 연결되고 운영 가능한 데이터 기반을 구축합니다.</p><p>운영 데이터를 AI로 분석하여 예측·진단하고 최적의 의사결정을 지원하는 지능형 운영 체계를 구축합니다.</p><p>이벤트 기반 자동화와 프로세스 자동화를 통해 반복 업무를 줄이고 운영 효율성과 신속한 대응력을 확보합니다.</p><p>Digital Twin과 AI가 실시간으로 운영을 판단하고, 자율적으로 제어하는 지능형 운영 체계를 구현합니다.</p></div>
-        </div>
-        <div class="priority"><h2>기술 적용 우선순위</h2><div><b>우선 적용 (단기)</b><ul><li>데이터 플랫폼 구축</li><li>통합 대시보드</li><li>이벤트 모니터링/알림</li><li>기본 API 연계</li></ul></div><i>▶</i><div><b>중기 적용</b><ul><li>AI 분석 및 예측 모델</li><li>수요·ETA 예측 고도화</li><li>Agentic AI 적용</li><li>Workflow 자동화</li></ul></div><i>▶</i><div><b>고도화 적용 (장기)</b><ul><li>Digital Twin 고도화</li><li>Physical AI 적용</li><li>자율 운영 체계 확립</li><li>산업 확산 및 연계</li></ul></div></div>
-        <div class="principles"><h2>기술 적용 원칙</h2><span>운영 중심<br /><small>현장 운영 가치를 최우선으로 고려</small></span><span>실증 기반<br /><small>실증과 검증을 통한 안정적 기술 적용</small></span><span>확장 가능 구조<br /><small>모듈화·확장 가능한 유연한 구조 설계</small></span><span>표준 기반<br /><small>국제·국내 표준을 준수한 상호운용성 확보</small></span><span>AI 신뢰성 확보<br /><small>안전·윤리·신뢰 기반의 AI 운영 체계 구축</small></span></div>
-        <div class="effect"><h2>기대 효과</h2><p>운영 효율성 향상 및 비용 절감</p><p>의사결정 속도 및 정확도 향상</p><p>고객 서비스 수준 및 만족도 향상</p><p>지속 가능한 스마트항만 운영 기반 확보</p></div>
+        <img src="./src/assets/slides/slide-3.png" alt="기술 적용 전략 슬라이드" />
       </section>
 
       <section class="slide" id="slide-4" aria-label="PortSight AI Platform">
-        <div class="arch">
-          <aside class="infra"><h2>외부 인프라</h2><div>TOS<br /><small>Terminal Operating System</small></div><div>포트/항만<br />유관 시스템</div><div>외부 데이터 소스<br /><small>정부/공공/금융 등</small></div></aside>
-          <section class="platform-arch">
-            <h2>PortSight AI Platform</h2>
-            <div class="layer"><b><span>1</span>Presentation<br />Layer</b><p>사용자 포털</p><p>통합 대시보드</p><p>알림/메시지</p><p>관리자 콘솔</p></div>
-            <div class="layer"><b><span>2</span>Application /<br />Service Layer</b><p>e-slip Backend</p><p>통합포털 Backend</p><p>지능형알림 Backend</p><p>API Gateway</p></div>
-            <div class="layer purple-layer"><b><span>3</span>AI Service Layer</b><p>AI Orchestrator</p><p>Prompt Routing</p><p>Agent Workflow</p><p>Tool / API 연계</p><p>응답 생성 및 후처리</p></div>
-            <div class="layer teal-layer"><b><span>4</span>AI Model Layer</b><p>항만특화 LLM</p><p>Embedding Model</p><p>Vision Model</p><p>Reranker Model</p><p>기타 특화 모델</p></div>
-            <div class="layer green-layer"><b><span>5</span>Knowledge<br />Processing Layer</b><p>데이터 수집</p><p>ETL/정제</p><p>OCR/Parsing</p><p>Chunking</p><p>Metadata 생성</p><p>Ontology 매핑</p><p>Embedding 생성</p><p>Indexing</p></div>
-            <div class="layer blue-layer"><b><span>6</span>Knowledge<br />Retrieval Layer</b><p>Metadata Repository</p><p>Text Vector Index</p><p>Multimodal Index</p><p>Knowledge Graph</p></div>
-            <div class="layer data-layer"><b><span>7</span>Data Layer</b><p>종합 항만 Data Lake</p><p>PORTMIS DB</p><p>사용자 DB</p><p>물류지도 DB</p><p>...</p></div>
-          </section>
-          <aside class="ops"><h2>운영/보안 계층</h2><h3>운영 관리</h3><p>모니터링<br /><small>Monitoring</small></p><p>로그 관리<br /><small>Logging</small></p><p>성능 관리<br /><small>Performance</small></p><p>백업/복구<br /><small>Backup/DR</small></p><h3>보안 관리</h3><p>SSO / IAM<br /><small>인증/인가</small></p><p>접근 제어<br /><small>RBAC</small></p><p>데이터 보안<br /><small>Encryption</small></p><p>감사 추적<br /><small>Audit Trail</small></p></aside>
-        </div>
-        <div class="legend"><b>범례<br /><small>Legend</small></b><span>━━ 서비스 호출 (API)</span><span>╌╌ 데이터 동기화 (Batch)</span><span>╍╍ 실시간 이벤트 (Event)</span><span>↔ 질의/응답 (Query/Response)</span><b>주요<br />특징</b><ul><li>항만 도메인 특화 데이터 기반의 지식 처리 및 검색</li><li>멀티모달(RAG) 지원: Text / Image / Graph</li><li>하이브리드 검색과 AI 추론을 통한 업무 자동화 및 의사결정 지원</li></ul></div>
+        <img src="./src/assets/slides/slide-4.png" alt="PortSight AI Platform 아키텍처 슬라이드" />
       </section>
     </main>
     <script type="module" src="./src/main.js"></script>
